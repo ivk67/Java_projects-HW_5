@@ -3,10 +3,10 @@ package HW_5;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PhoneBook {
+public class Main {
     private Map<String, String> book;
 
-    public PhoneBook() {
+    public Main() {
         book = new HashMap<String, String>();
     }
 
@@ -24,7 +24,7 @@ public class PhoneBook {
     }
 
     public static void main(String[] args) {
-        PhoneBook phoneBook = new PhoneBook();
+        Main phoneBook = new Main();
         phoneBook.add("John Smith", "123-456-7890");
         phoneBook.add("Jane Smith", "111-222-3333");
         phoneBook.add("John Smith", "555-666-7777");
