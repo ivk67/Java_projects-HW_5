@@ -1,3 +1,5 @@
+/* Задача_1: Реализуйте структуру телефонной книги с помощью HashMap, учитывая, 
+             что 1 человек может иметь несколько телефонов. */
 package HW_5;
 
 import java.util.HashMap;
@@ -25,11 +27,12 @@ public class Main {
 
     public static void main(String[] args) {
         Main phoneBook = new Main();
-        phoneBook.add("John Smith", "123-456-7890");
-        phoneBook.add("Jane Smith", "111-222-3333");
-        phoneBook.add("John Smith", "555-666-7777");
+        phoneBook.add("Иван Петров", "923-456-7890");
+        phoneBook.add("Надежда Петрова", "911-222-3333");
+        phoneBook.add("Иван Петров", "955-666-7777");
+        phoneBook.add("Иван Петров", "913-032-5789");
 
-        System.out.println(phoneBook.get("John Smith"));
-        System.out.println(phoneBook.get("Jane Smith"));
+        System.out.println("Иван Петров: "+ phoneBook.get("Иван Петров"));
+        System.out.println("Надежда Петрова: " + phoneBook.get("Надежда Петрова"));
     }
 }
